@@ -28,7 +28,8 @@ function App() {
   }, [tech]);
 
   /**
-   * Só é executado quando o atributo observado/escutado é alterado.
+   * Só é executado quando o atributo observado/escutado é alterado
+   * retornando um único valor.
    */
   const techSize = useMemo(() => tech.length, [tech]);
   return (
